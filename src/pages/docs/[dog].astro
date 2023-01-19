@@ -1,0 +1,12 @@
+---
+export function getStaticPaths() {
+  return [
+    // 生成対象: /dogs/clifford
+    { params: { dog: "clifford" } },
+    // 生成対象: /dogs/rover
+    { params: { dog: "rover" } },
+    // 生成対象: /dogs/spot
+    { params: { dog: "spot" } },
+  ];
+}
+---
